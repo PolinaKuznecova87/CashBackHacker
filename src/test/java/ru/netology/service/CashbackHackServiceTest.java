@@ -1,19 +1,15 @@
 package ru.netology.service;
 
-import org.junit.*;
+import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-
 public class CashbackHackServiceTest {
 
-
     @Test
-    public void testRemain() {
-
+    public void remain() {
         CashbackHackService service = new CashbackHackService();
         assertEquals(service.remain(250), 750);
-
     }
 
     @Test
@@ -47,6 +43,4 @@ public class CashbackHackServiceTest {
         assertEquals(service.remain(0), 1000);
 
     }
-
 }
-    
