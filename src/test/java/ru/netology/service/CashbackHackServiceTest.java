@@ -50,7 +50,7 @@ public class CashbackHackServiceTest {
     void remain() {
         CashbackHackService service = new CashbackHackService();
 
-        assertEquals(service.remain(0), 1000);
+        assertEquals(service.remain(500), 500);
 
     }
 }
