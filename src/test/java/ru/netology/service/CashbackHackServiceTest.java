@@ -10,36 +10,41 @@ public class CashbackHackServiceTest {
     public void testRemain() {
 
         CashbackHackService service = new CashbackHackService();
-        assertEquals(service.remain(250),750);
+        assertEquals(service.remain(250), 750);
 
     }
+
     @Test
     public void testRemainMin() {
         CashbackHackService service = new CashbackHackService();
 
-        assertEquals(service.remain(1000),0);
+        assertEquals(service.remain(1000), 0);
 
     }
+
     @Test
     public void testRemainBelowThousand() {
         CashbackHackService service = new CashbackHackService();
 
-        assertEquals(service.remain(999),1);
+        assertEquals(service.remain(999), 1);
 
     }
+
     @Test
     public void testRemainOne() {
         CashbackHackService service = new CashbackHackService();
 
-        assertEquals(service.remain(1),999);
+        assertEquals(service.remain(1), 999);
 
     }
+
     @Test
     public void testRemainZiro() {
         CashbackHackService service = new CashbackHackService();
 
-        assertEquals(service.remain(0),1000);
+        assertEquals(service.remain(0), 1000);
 
     }
+
 
 }
